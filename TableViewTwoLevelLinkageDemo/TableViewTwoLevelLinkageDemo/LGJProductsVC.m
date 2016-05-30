@@ -13,7 +13,7 @@
 @property(nonatomic, strong)UITableView *productsTableView;
 @property(nonatomic, strong)NSArray *productsArr;
 @property(nonatomic, strong)NSArray *sectionArr;
-@property(nonatomic, assign)BOOL isScrollDown;//是否是向下滚动
+@property(nonatomic, assign)BOOL isScrollUp;//是否是向上滚动
 @property(nonatomic, assign)CGFloat lastOffsetY;//滚动即将结束时scrollView的偏移量
 
 @end
@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _isScrollDown = false;
+    _isScrollUp = false;
     _lastOffsetY = 0;
     
     [self configData];
@@ -91,7 +91,7 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
     
-    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(willDisplayHeaderView:)] != _isScrollDown) {
+    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(willDisplayHeaderView:)] != _isScrollUp) {
         [self.delegate willDisplayHeaderView:section];
     }
     
@@ -99,7 +99,7 @@
 
 - (void)tableView:(UITableView *)tableView didEndDisplayingHeaderView:(UIView *)view forSection:(NSInteger)section {
     
-    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(didEndDisplayingHeaderView:)] && _isScrollDown) {
+    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(didEndDisplayingHeaderView:)] && _isScrollUp) {
         [self.delegate didEndDisplayingHeaderView:section];
     }
 }
@@ -108,7 +108,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     NSLog(@"_lastOffsetY : %f,scrollView.contentOffset.y : %f", _lastOffsetY, scrollView.contentOffset.y);
-    _isScrollDown = _lastOffsetY < scrollView.contentOffset.y;
+    _isScrollUp = _lastOffsetY < scrollView.contentOffset.y;
     _lastOffsetY = scrollView.contentOffset.y;
     NSLog(@"______lastOffsetY: %f", _lastOffsetY);
 }
