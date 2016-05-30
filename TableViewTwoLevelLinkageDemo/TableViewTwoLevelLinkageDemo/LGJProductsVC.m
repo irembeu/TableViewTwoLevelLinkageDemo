@@ -49,13 +49,12 @@
 
 - (void)createTableView {
     
-    self.view = [[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width * 0.25, 0, self.view.frame.size.width * 0.75, self.view.frame.size.height)];
+    self.view = [[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width * 0.25, 64, self.view.frame.size.width * 0.75, self.view.frame.size.height)];
     
     self.productsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     self.productsTableView.delegate = self;
     self.productsTableView.dataSource = self;
     self.productsTableView.showsVerticalScrollIndicator = false;
-    self.productsTableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     [self.view addSubview:self.productsTableView];
 }
 

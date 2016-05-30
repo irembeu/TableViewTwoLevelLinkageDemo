@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "679CD38689306FE4C5CC83C8E361128D302B63CF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "679CD38689306FE4C5CC83C8E361128D302B63CF" : 0,
+    "D94283B0B0FB87984A9C87FB56232E0FCA564CAC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "50FA405A-61FA-4B96-A767-898F7E435654",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "679CD38689306FE4C5CC83C8E361128D302B63CF" : "TableViewTwoLevelLinkageDemo\/",
+    "D94283B0B0FB87984A9C87FB56232E0FCA564CAC" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TableViewTwoLevelLinkageDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TableViewTwoLevelLinkageDemo\/TableViewTwoLevelLinkageDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iOSJason\/TableViewTwoLevelLinkageDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "679CD38689306FE4C5CC83C8E361128D302B63CF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iOSJason\/PageBlurDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D94283B0B0FB87984A9C87FB56232E0FCA564CAC"
+    }
+  ]
+}
